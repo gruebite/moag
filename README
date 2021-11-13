@@ -1,0 +1,32 @@
+ _____ ______   ________  ________  ________
+ |\   _ \  _   \|\   __  \|\   __  \|\   ____\
+ \ \  \\\__\ \  \ \  \|\  \ \  \|\  \ \  \___|
+  \ \  \\|__| \  \ \  \\\  \ \   __  \ \  \  ___
+   \ \  \    \ \  \ \  \\\  \ \  \ \  \ \  \|\  \
+    \ \__\    \ \__\ \_______\ \__\ \__\ \_______\
+     \|__|     \|__|\|_______|\|__|\|__|\|_______|
+
+
+MOAG (Mother of all Games) is a multiplayer tank game kinda like Worms
+or Scorched Earth.
+
+	RUNNING
+
+You need `love2d` and you can simply CD to the directy and run:
+
+`love .`
+
+Or to the run the server:
+
+`love . --server --port 6624`
+
+	CONTRIBUTING
+
+The file directory structure is set up like this:
+
+/ 				main.lua and conf.lua. main.lua call into client or server
+lib/	 		3rd party or non-domain specific libraries, like vector math
+client/			all client related code
+server/			all server related code
+shared/			all code shared between client and server
+res/			resources like images and fonts.
